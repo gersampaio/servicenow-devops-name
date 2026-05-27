@@ -7,7 +7,7 @@ pool:
 steps:
 - task: ServiceNow-DevOps-Server-Change-Acceleration@1
   inputs:
-    connectedServiceName: 'dev284146-Gexx-ServiceNow DevOps Service Connection'
+    connectedServiceName: 'SnowLab'
     toolId: 'AzureDevOps'
     jobName: 'Deploy-App'
 
