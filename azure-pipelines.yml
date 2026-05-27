@@ -1,0 +1,15 @@
+trigger:
+- main
+
+pool:  vmImage: ubuntu-latest
+
+steps:
+
+- task: ServiceNow-DevOps-Server-Change-Acceleration@1  
+inputs:    
+connectedServiceName: 'dev284146-Gexx-ServiceNow DevOps Service Connection'    
+toolId: 'AzureDevOps'    
+jobName: 'Deploy-App'
+
+- script: |    
+echo "Executando deploy" 
