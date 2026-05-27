@@ -1,10 +1,44 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+stages:
 
-steps:
+# =========================================
+# BUILD
+# =========================================
+- stage: Build
 
-- script: |
-    echo "Teste"
+  jobs:
+
+  - job: BuildJob
+
+    pool:
+      vmImage: ubuntu-latest
+
+    steps:
+
+    - script: |
+        echo "Executando build..."
+      displayName: 'Build'
+
+
+# =========================================
+# CHANGE ACCELERATION
+# =========================================
+- stage: ChangeRequest
+
+  dependsOn: Build
+
+  jobs:
+
+  - job: ChangeAcceleration
+
+    pool: server
+
+    steps:
+
+    - task: ServiceNow-DevOps-Server-Change-Acceleration@1
+      displayName: 'ServiceNow Change Acceleration'
+
+      inputs:
+        connectedServiceName: 'DevOps__19700101180709_DevOpsLab'
