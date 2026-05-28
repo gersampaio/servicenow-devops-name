@@ -7,3 +7,5 @@ Testando aprovação automática. :D
 Agora vou testar atribuição automática de grupo e voi lá, aprovação automática!!!
 
 Teste de laboratório!
+
+Teste de aprovação manual! 👍
