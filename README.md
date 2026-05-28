@@ -8,4 +8,4 @@ Agora vou testar atribuição automática de grupo e voi lá, aprovação autom�
 
 Teste de laboratório!
 
-Teste de aprovação manual! 👍
+Teste de aprovação manual!
