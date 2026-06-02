@@ -9,3 +9,5 @@ Agora vou testar atribuição automática de grupo e voi lá, aprovação autom�
 Teste de laboratório!
 
 Teste de aprovação manual sem grupo de atribuição.
+
+Teste de risco e impacto.
